@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "552de024-90f6-424e-aa80-559bc1cffa6f",
+		"name": "DFMG",
+		"description": "Integration ID\t| Direction\t| Integration Name      \t| Author(s)\t        | DF#\t\n1001\t        | Inbound\t| Property Inbound      \t| Reba\t            | DF.10\t\n1001.1\t        | PULL\t    | Property Outbound\t        | Barani, Nikhitha\t| DF.10\t\n1001.9\t        | Outbound\t| Property Async Response\t| Abishek, Neha\t    | DF.10\t\n9.0\t            | Inbound\t| Service Request Inbound\t| Surendran, Rohan\t| DF.10\t\n9.1\t            | Outbound\t| Service Request Outbound\t| Surendran, Rohan\t| DF.10\t\n1002\t        | Inbound\t| Building Inbound\t        | Abishek\t        | DF.20\t\n1002.1\t        | PULL\t    | Building Outbound\t        | Mounika\t        | DF.20\t",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1001 - Property Inbound",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "dtagusertest",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n\"spi:action\":\"Create Draft\",\n\n\"spi:cstOperationTX\":\"dtag_in_global_property\",\n\n\"spi:triIdTX\":\"1001020BE\",\n\n\"spi:triNameTX\":\"DFMG Property 001\",\n\n\"spi:triDescriptionTX\":\"Property from RDH\",\n\n\"spi:triTenureCL\":\"Leased\",\n\n\"spi:cstFunctionalLocationTX\":\"1001020BE\",\n\n\"spi:triAddressTX\":\"Manyatha G2\",\n\n\"spi:triCityTX\":\"Banglore\",\n\n\"spi:cstDistrictTX\":\"Krishna\",\n\n\"spi:triCountryTX\":\"India\",\n\n\"spi:triStateProvTX\":\"Karnataka\",\n\n\"spi:triZipPostalTX\":\"560045\",\n\n\"spi:triGisLatitudeNU\":20.123,\n\n\"spi:triGisLongitudeNU\":14.14,\n\n\"spi:cstExternalRefTX\":\"\",\n\n\"spi:cstSourceTX\":\"RDH\",\n\n\"spi:cstLocationIdTX\":\"100023\",\n\n\"spi:cstIntExternalRefTX\":\"13546\", \n\n\"spi:cstESBIdTX\":\"190977\", \n\n\"spi:triStatusCL\":\"Draft\",\n\n\"spi:cstDTAGLocationAliasDTOLR\": [\n\n                  {\n\n                    \"spi:action\":\"Create Draft\",\n\n                    \"spi:triIdTX\":\"1001020BE\",\n\n                    \"spi:triNameTX\":\"Location Alias 001\",\n\n                    \"spi:cstCompanyCodeTX\":\"088\",\n\n                    \"spi:cstFunctionalLocTX\":\"1001020BE\",\n\n                    \"spi:cstPrimaryAliasBL\":true,\n\n                    \"spi:cstOrgPathTX\":\"\\\\Organizations\\\\ISS Customers\\\\DTAG\\\\GMG Generalmietges. mbH\",\n\n                    \"spi:triStatusCL\":\"Draft\",\n\n                    \"spi:triDescriptionTX\":\"LA for GMG\",\n\n                    \"spi:cstClientTX\":\"ISS\",\n\n                    \"spi:cstEntityNoTX\":\"E0011\",\n\n                    \"spi:cstBuildingNoTX\":\"G2\",\n\n                    \"spi:cstLandNoTX\":\"L1\",\n\n                    \"spi:triAddressTX\":\"Nagawara\",\n\n                    \"spi:triCityTX\":\"Hyderabad\",\n\n                    \"spi:triCountryTX\":\"India\",\n\n                    \"spi:cstDistrictTX\":\"HYD\",\n\n                    \"spi:triCountryCodeTX\":\"IN\",\n\n                    \"spi:triZipPostalTX\":\"533247\",\n\n                    \"spi:triGisLatitudeNU\":34.4,\n\n                    \"spi:triGisLongitudeNU\":78.6,\n\n                    \"spi:cstArchObjIDTX\":\"ARID040\",\n\n                    \"spi:cstValidFromDT\":\"2020-03-16\",\n\n                    \"spi:cstValidToDT\":\"2020-06-16\",\n\n                    \"spi:cstAcquisitionDateDA\":\"2020-01-31\",\n\n                    \"spi:cstAccountAssignmentBL\":true,\n\n                    \"spi:cstNoStatusValueBL\":true,\n\n                    \"spi:cstApprovedBL\":true,\n\n                    \"spi:cstDeletionFlagBL\":true,\n\n                    \"spi:cstDataLockBL\":true,\n\n                    \"spi:cstNoUserStatusBL\":true,\n\n                    \"spi:cstMigratesBL\":true,\n\n                    \"spi:cstCostCollectorBL\":true,\n\n                    \"spi:cstUserApprovedBL\":true,\n\n                    \"spi:cstUserDeletionFlagBL\":true,\n\n                    \"spi:cstUserStatusExitBL\":true,\n\n                    \"spi:cstNormalBL\":true,\n\n                    \"spi:cstFunctLocTypeTX\":\"Type 1\",\n\n                    \"spi:cstProfitCenterTX\":\"Center 01\",\n\n                    \"spi:cstBusinessDivisionTX\":\"GBS\",\n\n                    \"spi:cstExternalCostCentreTX\":\"EXT 001\",\n\n                    \"spi:cstPlanGroupTX\":\"Group 1\",\n\n                    \"spi:cstCoreLocatnBL\":true,\n\n                    \"spi:cstAvailableBL\":true,\n\n                    \"spi:cstExtPropertyIdTX\":\"Property 1\",\n\n                    \"spi:cstAltFunctionalLocRef1TX\":\"Ref 1\",\n\n                    \"spi:cstAltFunctionalLocRef2TX\":\"Ref 2\",\n\n                    \"spi:cstAltFunctionalLocRef3TX\":\"Ref 3\",\n\n                    \"spi:cstAltFunctionalLocRef4TX\":\"Ref 4\",\n\n                    \"spi:cstAltFunctionalLocRef5TX\":\"Ref 5\",\n\n                    \"spi:cstAltFunctionalLocRef6TX\":\"Ref 6\",\n\n                    \"spi:cstAltFunctionalLocRef7TX\":\"Ref 7\",\n\n                    \"spi:cstAltFunctionalLocRef8TX\":\"Ref 8\",\n\n                    \"spi:cstAltFunctionalLocRef9TX\":\"Ref 9\",\n\n                    \"spi:cstWorkPlaceNoTX\":\"Floor 2\",\n\n                    \"spi:cstBuildIndexNU\":20,\n\n                    \"spi:cstBuildingIndexTX\":\"second\",\n\n                    \"spi:cstBusinessPartnerNumberTX\":\"Partner 1\",\n\n                    \"spi:cstIMBESTClusterConstructionTX\":\"IM0100\",\n\n                    \"spi:cstTGAClusterTX\":\"TGA1\",\n\n                    \"spi:cstWarmRentClusterTX\":\"WRC 12\",\n\n                    \"spi:cstWarmRentClusterInfoTX\":\"WRC Info 1\",\n\n                    \"spi:cstWarmRentClusterSIMTX\":\"SIM12\",\n\n                    \"spi:cstWarmRentProductTX\":\"Product 1\",\n\n                    \"spi:cstWarmRentProductITX\":\"Product 2\",\n\n                    \"spi:cstSettlementOfWarmRentTX\":\"Settle 1\",\n\n                    \"spi:cstDrawingFileNameTX\":\"Drawing 1\",\n\n                    \"spi:cstDFMGActiveDA\":\"2020-02-01\",\n\n                    \"spi:cstNonOperationalDateDA\":\"2020-01-26\",\n\n                    \"spi:cstDismantleDateDA\":\"2020-12-30\",\n\n                    \"spi:cstPlannedVacancyDA\":\"2020-12-31\",\n\n                    \"spi:cstDFMGClusterTX\":\"Cluster 123\",\n\n                    \"spi:cstLocationClusterTX\":\"LC1\",\n\n                    \"spi:cstExtResponsibleOrgTX\":\"DFMG\",\n\n                    \"spi:cstDELandCadstreL1TX\":\"Cadstre 1\",\n\n                    \"spi:cstDELandCadstreL2TX\":\"Cadstre 2\",\n\n                    \"spi:cstDELandCadstreL3TX\":\"Cadstre 3\",\n\n                    \"spi:cstRegionCodeTX\":\"MT\",\n\n                    \"spi:triStateProvTX\":\"Karnataka\",\n\n                    \"spi:cstStateLevelCityTX\":\"Benguluru\",\n\n                    \"spi:cstCouncilTX\":\"Co1\",\n\n                    \"spi:cstDTAGRadioLocationTX\":\"1\",\n\n                    \"spi:cstExtRadioLocationTX\":\"2\",\n\n                    \"spi:cstConstructionAreaTX\":\"Area1\",\n\n                    \"spi:cstLegalRelationshipTX\":\"LR1\",\n\t\t\t\t\t\n\t\t\t\t\t\"spi:cstDFMGTakeoverDateDA\":\"2020-03-18\",\n\t\t\t\t\t\"spi:cstDFMGTakeoverBL\":True,\n\t\t\t\t\t\"spi:cstDFMGActiveDataDA\":\"2020-03-03\",\n\t\t\t\t\t\"spi:cstAccessContactTX\":\"Jane Doe\",\n\t\t\t\t\t\"spi:cstAccompContactTX\":\"Donald\",\n\t\t\t\t\t\"spi:cstRescueEquipmentTX\":\"Equip 1.0\",\n\t\t\t\t\t\"spi:cstAccessEquipmentTX\":\"Equip 1.1\",\n\t\t\t\t\t\"spi:cstKeySafeInfoTX\":\"Key1001\",\n\t\t\t\t\t\"spi:cstAccessCommentTX\":\"Access Given\",\n\t\t\t\t\t\"spi:cstAccessTimesTX\":\"Time\",\n\t\t\t\t\t\"spi:cstAccessApproachTX\":\"Approach\",\n\t\t\t\t\t\"spi:cstAccessRemarksTX\":\"Remarks 1\",\n\t\t\t\t\t\"spi:cstUtilityCompanyTX\":\"DFMG\",\n\t\t\t\t\t\"spi:cstSPContactPersonTX\":\"Person 2\",\n\t\t\t\t\t\"spi:cstSPPhoneTX\":\"2345111\",\n\t\t\t\t\t\"spi:cstSPStreetTX\":\"Street 3\",\n\t\t\t\t\t\"spi:cstSPCityTX\":\"City 3.2\",\n\t\t\t\t\t\"spi:cstSPZipCodeTX\":\"687221\",\n\t\t\t\t\t\"spi:cstSPCountryCodeTX\":\"91\",\n\t\t\t\t\t\"spi:cstPollutantsExistBL\":\"True\" ,\n\t\t\t\t\t\n\n\t\t\t\t\t\n\n                }],\n\t\t\t\t\"spi:cstClientDetailsIntermediateLR\":[\n\t\t\t\t{\n\t\t\t\t   \"dcterms:identifer\":\"1004568\"\n\t\t\t\t  }],\n\t\t\t\t\"spi:cstPeopleEmployeeIntermediate\":[\n\t\t\t\t{\n\t\t\t       \"spi:triIdTX\":\"11999\"\n\t\t\t\t } ],\n\t\t\t    \"spi:cstPeopleExtContactIntermediateLR\":[\n\t\t\t\t{\n\t\t\t\t   \"dcterms:identifer\"198887\",\n\t\t\t\t   \"spi:triContactRoleCL\":\"\"\n\t\t\t\t }],\n\t\t\t\t\"spi:cstTFMGeneralDTOLR\":[\n\t\t\t\t{\n\t\t\t\t   \"dcterms:identifer\":\"123111\"\n\t\t\t\t}],\n\t\t\t\t\"spi:cstDFMGGeneralDTOLR:\"[\n\t\t\t\t{\n\t\t\t\t   \"dcterms:identifer\":\"290000\"\n\t\t\t\t   }],\n\t\t\t\t\"spi:cstReadinessLogLineItemLR\":[\n\t\t\t\t{\n\t\t\t\t  \"spi:triNameTX\":\"Name 3\",\n\t\t\t\t  \"cstResponseCL\":\"\"\n\t\t\t\t }]\n       \n}"
+				},
+				"url": {
+					"raw": "{{host}}/oslc/so/cstDTAGPropertyDTOCF",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"oslc",
+						"so",
+						"cstDTAGPropertyDTOCF"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1001.1 - PULL Property Outbound",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "dtagusertest",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/oslc/spq/cstDTAGPropertyLocationAliasQC?oslc.select=*,spi:cstDTAGPropertyIMLR{*,spi:cstDTAGLocationAliasLR{*}}}&oslc.where=spi:triModifiedSY%3E\"2020-02-11\"",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"oslc",
+						"spq",
+						"cstDTAGPropertyLocationAliasQC"
+					],
+					"query": [
+						{
+							"key": "oslc.select",
+							"value": "*,spi:cstDTAGPropertyIMLR{*,spi:cstDTAGLocationAliasLR{*}}}"
+						},
+						{
+							"key": "oslc.where",
+							"value": "spi:triModifiedSY%3E\"2020-02-11\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1002 - Building Inbound",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "dtagusertest",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n\"spi:action\":\"Create Draft\",\n\n\"spi:cstOperationTX\":\"dtag_in_global_building\",\n\n\"spi:triIdTX\":\"1001030GE1\",\n\n\"spi:triNameTX\":\"Building G2\",\n\n\"spi:triDescriptionTX\":\"Building from RDH\",\n\n\"spi:triStatusCL\":\"Draft\",\n\n\"spi:cstHours\":\"Two\",\n\n\"spi:triTenureCL\":\"Leased\",\n\n\"spi:triBuildingClassCL\":\"\",\n\n\"spi:cstPropertyLR\":\n\n          [\n\n            {\n\n              \"spi:triIdTX\":\"1001030\"\n\n            }\n\n          ],\n\n\"spi:cstFunctionalLocationTX\":\"1001030GE1\",\n\n\"spi:triActiveStartDA\":\"2020-03-26\",\n\n\"spi:triAddressTX\":\"Manyatha G2\",\n\n\"spi:triCityTX\":\"Bangalore\",\n\n\"spi:cstDistrictTX\":\"KA\",\n\n\"spi:triCountryTX\":\"India\",\n\n\"spi:triZipPostalTX\":\"560045\",\n\n\"spi:triGisLatitudeNU\":20.123,\n\n\"spi:triGisLongitudeNU\":14.14,\n\n\"spi:cstIntExternalRefTX\":\"13546\",\n\n\"spi:cstExternalRefTX\":\"\",\n\n\"spi:cstSourceTX\":\"RDH\",\n\n\"spi:cstDTAGLocationAliasDTOLR\":\n\n         [\n\n           {\n\n             \"spi:cstPrimaryAliasBL\":true,\n\n             \"spi:triIdTX\":\"1001030GE2\",\n\n             \"spi:triNameTX\":\"Location Alias 001\",\n\n             \"spi:triDescriptionTX\":\"LA for DFMG\",\n\n             \"spi:triStatusCL\":\"Draft\",\n\n             \"spi:cstCompanyCodeTX\":\"088\",\n\n             \"spi:cstFunctionalLocationTX\":\"1001030GE2\",\n\n             \"spi:cstClientTX\":\"ISS\",\n\n             \"spi:cstEntityNoTX\":\"E0011\",\n\n             \"spi:cstBuildingNoTX\":\"Two\",\n\n             \"spi:cstLandNoTX\":\"L1\",\n\n             \"spi:triAddressTX\":\"App\",\n\n             \"spi:triCityTX\":\"Amalapuram\",\n\n             \"spi:cstDistrictTX\":\"East Godavari\",\n\n             \"spi:triCountryTX\":\"India\",\n\n             \"spi:triCountryCodeTX\":\"IN\",\n\n             \"spi:triZipPostalTX\":\"533247\",\n\n             \"spi:triGisLatitudeNU\":34.4,\n\n             \"spi:triGisLongitudeNU\":78.6,\n\n             \"spi:cstArchObjIDTX\":\"ARID040\",\n\n             \"spi:cstValidFromDT\":\"2020-03-26\",\n\n             \"spi:cstValidToDT\":\"2020-03-31\",\n\n             \"spi:cstAcquisitionDateDA\":\"2020-03-27\",\n\n             \"spi:cstAccountAssignmentBL\":true,\n\n             \"spi:cstNoStatusValueBL\":true,\n\n             \"spi:cstApprovedBL\":true,\n\n             \"spi:cstDeletionFlagBL\":true,\n\n             \"spi:cstDataLockBL\":true,\n\n             \"spi:cstNoUserStatusBL\":true,\n\n             \"spi:cstMigratesBL\":true,\n\n             \"spi:cstCostCollectorBL\":true,\n\n             \"spi:cstUserApprovedBL\":true,\n\n             \"spi:cstUserDeletionFlagBL\":true,\n\n             \"spi:cstUserStatusExitBL\":true,\n\n             \"spi:cstNormalBL\":true,\n\n             \"spi:cstOrgPathTX\":\"\\\\Organizations\\\\ISS Customers\\\\DTAG\\\\DFMG Deutsche Funkturm GmbH\",\n\n             \"spi:triBuildingLR\":\n\n                             [\n\n                               {\n\n                                 \"spi:triIdTX\":\"100101BE\"\n\n                               }\n\n                             ],\n\n             \"spi:cstAccessContactTX\":\"Contact1\",\n\n             \"spi:cstAccompContactTX\":\"Contact2\",\n\n             \"spi:cstRescueEquipmentTX\":\"Equip1\",\n\n             \"spi:cstAccessEquipmentTX\":\"Equip2\",\n\n             \"spi:cstKeySafeInfoTX\":\"Info1\",\n\n             \"spi:cstAccessCommentTX\":\"Comment1\",\n\n             \"spi:cstAccessTimesTX\":\"Morning Hours\",\n\n             \"spi:cstAccessApproachTX\":\"Manager\",\n\n             \"spi:cstAccessRemarksTX\":\"Remarks1\",\n\n             \"spi:cstFunctLocTypeTX\":\"Type 1\",\n\n             \"spi:cstProfitCenterTX\":\" Center 1\",\n\n             \"spi:cstBusinessDivisionTX\":\"GBS\",\n\n             \"spi:cstExternalCostCentreTX\":\"EXT 001\",\n\n             \"spi:cstPlanGroupTX\":\"Group1\",\n     \n             \"spi:cstCoreLocatnBL\":true,\n\n             \"spi:cstAvailableBL\":true,\n\n             \"spi:cstExtPropertyIdTX\":\"Property1\",\n\n             \"spi:cstAltFunctionalLocRef1TX\":\"Ref 1\",\n\n             \"spi:cstAltFunctionalLocRef2TX\":\"Ref 2\",\n\n             \"spi:cstAltFunctionalLocRef3TX\":\"Ref 3\",\n\n             \"spi:cstAltFunctionalLocRef4TX\":\"Ref 4\",\n\n             \"spi:cstAltFunctionalLocRef5TX\":\"Ref 5\",\n\n             \"spi:cstAltFunctionalLocRef6TX\":\"Ref 6\",\n\n             \"spi:cstAltFunctionalLocRef7TX\":\"Ref 7\",\n\n             \"spi:cstAltFunctionalLocRef8TX\":\"Ref 8\",\n\n             \"spi:cstAltFunctionalLocRef9TX\":\"Ref 9\",\n\n             \"spi:cstWorkplaceNoTX\":\"Floor 2\",\n\n             \"spi:cstBuildIndexNU\":20,\n\n             \"spi:cstBuildingIndexTX\":\"second\",\n\n             \"spi:cstBusinessPartnerNumberTX\":\"Partner 1\",\n\n             \"spi:cstIMBESTClusterConstructionTX\":\"IM0100\",\n\n             \"spi:cstTGAClusterTX\":\"TGA1\",\n\n             \"spi:cstWarmRentClusterTX\":\"WRC 12\",\n\n             \"spi:cstWarmRentClusterInfoTX\":\"WRC Info 1\",\n\n             \"spi:cstWarmRentClusterSIMTX\":\"SIM12\",\n\n             \"spi:cstWarmRentProductTX\":\"Product 1\",\n\n             \"spi:cstWarmRentProductITX\":\"Product 2\",\n\n             \"spi:cstSettlementofWarmRentTX\":\"Settle 1\",\n\n             \"spi:cstDrawingFileNameTX\":\"Drawing 1\",\n\n             \"spi:cstDFMGActiveDA\":\"2020-04-15\",\n\n             \"spi:cstNonOperationalDateDA\":\"2020-03-29\",\n\n             \"spi:cstDismantleDateDA\":\"2020-03-31\",\n\n             \"spi:cstPlannedVacancyDA\":\"2020-03-31\",\n\n             \"spi:cstDFMGClusterTX\":\"Cluster 123\",\n\n             \"spi:cstLocationClusterTX\":\"LC1\",\n\n             \"spi:cstPollutantsExistBL\":true,\n\n             \"spi:cstExtResponsibleOrgTX\":\"DFMG\",\n\n             \"spi:cstDELandCadstreL1TX\":\"Cadstre 1\",\n\n             \"spi:cstDELandCadstreL2TX\":\"Cadstre 2\",\n\n             \"spi:cstDELandCadstreL3TX\":\"Cadstre 3\",\n\n             \"spi:cstRegionCodeTX\":\"MT\",\n\n             \"spi:triStateProvTX\":\"Andhra\",\n\n             \"spi:cstStateLevelCity\":\"AP\",\n\n             \"spi:cstCouncilTX\":\"Col\",\n\n             \"spi:cstDTAGRadioLocationTX\":\"1\",\n\n             \"spi:cstExtRadioLocationTX\":\"2\",\n\n             \"spi:cstConstructionAreaTX\":\"Area1\",\n\n             \"spi:cstDismantlingObligatnBL\":true,\n\n             \"spi:cstCompletnDA\":\"2020-04-30\",\n\n             \"spi:cstConstructionYearTX\":\"2020\",\n\n             \"spi:cstBuildgReadinessDT\":\"2020-05-01\",\n\n             \"spi:cstNoFloorsAboveGroundTX\":\"Seven\",\n\n             \"spi:cstNoFloorsUndergroundTX\":\"Three\",\n\n             \"spi:cstHistoricalMonumntBL\":true,\n\n             \"spi:cstLegalRelationshipTX\":\"LR1\",\n\n             \"spi:cstUtilityCompanyTX\":\"XYZ\",\n\n             \"spi:cstSPContactPersonTX\":\"Z\",\n\n             \"spi:cstSPPhoneTX\":\"9999999991\",\n\n             \"spi:cstSPStreetTX\":\"MVP\",\n\n             \"spi:cstSPCityTX\":\"RJY\",\n\n             \"spi:cstSPZipCodeTX\":\"533246\",\n\n             \"spi:cstSPCountryCodeTX\":\"IN\",\n\n           }\n\n         ],\n\n\"spi:cstClientDetailsIntermediateLR\":\n\n             [\n\n               {\n\n                 \"dcterms:identifer\":\"1002345\"\n\n               }\n\n             ],\n\n\"spi:cstPeopleEmployeeIntermediate\":\n\n            [\n\n              {\n\n                \"spi:triIdTX\":\"123456\"\n\n              }\n\n            ],\n\n\"spi:cstPeopleExtContactIntermediateLR\":\n\n            [\n\n              {\n\n                \"dcterms:identifer\":\"1009876\",\n                \"spi:triContactRoleCL\":\"\"\n\n              }\n\n            ],\n\n\"spi:cstTFMGeneralDTOLR\":\n\n            [\n\n              {\n\n                \"dcterms:identifer\":\"234567\",\n\n              }\n\n            ],\n\n\"spi:cstDFMGGeneralDTOLR\":\n\n            [\n\n              {\n\n                 \"dcterms:identifer\":\"345678\",\n\n              }\n\n            ],\n\n\"spi:triRequestClassLR\":\n\n            [\n\n              {\n\n                \"spi:triNameTX\":\"RC 1\",\n\n                \"spi:cstInsertUpdateDeleteTX\":\"Test\"\n\n              }\n\n            ]\n\n}"
+				},
+				"url": {
+					"raw": "{{host}}/oslc/so/cstDTAGBuildingDTOCF",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"oslc",
+						"so",
+						"cstDTAGBuildingDTOCF"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "password",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "dtagusertest",
+				"type": "string"
+			}
+		]
+	},
+	"protocolProfileBehavior": {}
+}
