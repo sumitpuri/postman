@@ -2,4 +2,4 @@
 
 HTTP POST URL: https://noderedpuri.mybluemix.net/tririga-outbound
 
-[payload](/payload.json)
+[JSON Body](/payload.json)
