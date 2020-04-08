@@ -2,6 +2,6 @@ dist: bionic
 language: bash
 deploy:
   provider: script
-  script: bash deploy.sh
+  script: bash deployment.sh
   on:
     branch: master
