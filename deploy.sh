@@ -1,1 +1,1 @@
-curl -H "Content-Type: application/json" -X POST -d '@payload1.json' -u spuri:Andover255 https://test.fms.issworld.com/devams/oslc/so/cstGlobalServiceRequestCF
+curl -H "Content-Type: application/json" -X POST -d '@payload1.json' https://test.fms.issworld.com/devams/oslc/so/cstGlobalServiceRequestCF
