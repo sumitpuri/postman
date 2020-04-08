@@ -1,5 +1,5 @@
 dist: bionic
-language: php
+language: bash
 deploy:
   provider: script
   script: bash deploy.sh
