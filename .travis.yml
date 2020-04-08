@@ -1,3 +1,4 @@
+dist: bionic
 deploy:
   provider: script
   script: bash deploy.sh
