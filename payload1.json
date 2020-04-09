@@ -1,4 +1,5 @@
 {
 "spi:cstOperationTX": "P_FINI_TFM_NOACCEPT",
-"spi:action": "Create Draft"
+"spi:action": "Create Draft",
+"key1":"value1"
 }
