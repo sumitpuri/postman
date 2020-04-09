@@ -1,22 +1,5 @@
 {
 "spi:cstOperationTX": "P_FINI_TFM_NOACCEPT",
 "spi:action": "Create Draft",
-"spi:cstIntExternalRefTX": "new pasm demo20",
-"cstCommentPASMLR":[
-    				         {
-                     "spi:triCommentTX": "Test Comment 10",
-                     "spi:triCommentTypeLI": "Reason",
-                     "spi:action": "Create"
-                     },
-                             {
-                     "spi:triCommentTX": "Test Comment 11",
-                     "spi:triCommentTypeLI": "Message",
-                     "spi:action": "Create"
-                     },
-                     {
-                     "spi:triCommentTX": "Test Comment 12",
-                     "spi:triCommentTypeLI": "Reason",
-                     "spi:action": "Create"
-                     }
-                     ]
+"spi:cstIntExternalRefTX": "new pasm demo20"
 }
