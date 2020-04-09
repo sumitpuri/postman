@@ -1,5 +1,4 @@
 {
 "spi:cstOperationTX": "P_FINI_TFM_NOACCEPT",
-"spi:action": "Create Draft",
-"spi:cstIntExternalRefTX": "new pasm demo20"
+"spi:action": "Create Draft"
 }
