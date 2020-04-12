@@ -2,5 +2,5 @@ os: linux
 dist: bionic
 language: bash
 script: bash deployment1.sh
-commit_message = "run1"
+commit_message == "run1"
 
