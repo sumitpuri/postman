@@ -6,4 +6,4 @@ deploy:
   script: bash deployment.sh
   on:
     branch: master
-    condition: "$TRAVIS_COMMIT_MESSAGE == *"[puri]"*"
+    condition: "$TRAVIS_COMMIT_MESSAGE == *"puri"*"
