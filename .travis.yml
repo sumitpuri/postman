@@ -1,11 +1,5 @@
 os: linux
 dist: bionic
 language: bash
-notifications:
-  email: false
-deploy:
-  provider: script
-  script: bash deployment1.sh
-  on:
-    branch: master
-    
+script: bash deployment1.sh
+if: commit_message == "run1"
