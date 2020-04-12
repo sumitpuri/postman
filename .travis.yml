@@ -8,6 +8,7 @@ deploy:
   script: bash deployment1.sh
   on:
     branch: master
+    commit_message: "run1"
 
     
     
