@@ -1,6 +1,6 @@
 os: linux
 dist: bionic
 language: bash
-script: bash $TRAVIS_COMMIT_MESSAGE.sh
+script: bash commit_message.sh
 if: $TRAVIS_COMMIT_MESSAGE IN ("run1","run2","run3")
   
