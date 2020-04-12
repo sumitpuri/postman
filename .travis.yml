@@ -8,5 +8,4 @@ deploy:
   script: bash deployment1.sh
   on:
     branch: master
-    condition: commit_message == "run1"
     
