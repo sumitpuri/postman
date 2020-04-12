@@ -3,3 +3,4 @@ dist: bionic
 language: bash
 if: commit_message == "run1"
   script: bash deployment1.sh
+
