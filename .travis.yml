@@ -1,15 +1,5 @@
 os: linux
 dist: bionic
 language: bash
-notifications:
-  email: false
-deploy:
-  provider: script
-  script: bash deployment1.sh
-  on:
-    branch: master
-    condition: $TRAVIS_COMMIT_MESSAGE == "run1"
-    
-    
-    
-    
+script: bash deployment1.sh
+if: commit_message == "run1"
