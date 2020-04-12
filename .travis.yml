@@ -2,6 +2,6 @@ os: linux
 dist: bionic
 language: bash
 script: bash deployment1.sh
-if: commit_message == "run"*
+if: commit_message IN ("run1","run2","run3")
   
 
