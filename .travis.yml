@@ -2,5 +2,5 @@ os: linux
 dist: bionic
 language: bash
 script: bash $TRAVIS_COMMIT_MESSAGE.sh
-condition: $TRAVIS_COMMIT_MESSAGE IN ("run1","run2","run3")
+condition: commit_message IN ("run1","run2","run3")
   
