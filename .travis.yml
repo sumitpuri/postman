@@ -7,5 +7,4 @@ deploy:
   on:
     branch: master
     condition: [[ $TRAVIS_COMMIT_MESSAGE == *"puri"* ]]
-    
-
+   
