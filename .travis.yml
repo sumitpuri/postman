@@ -6,4 +6,5 @@ deploy:
   script: if [[ $TRAVIS_COMMIT_MESSAGE == *"puri1"* ]] then bash deployment1.sh elif [[ $TRAVIS_COMMIT_MESSAGE == *"puri2"* ]] then bash deployment2.sh fi
   on:
     branch: master
+    
 
