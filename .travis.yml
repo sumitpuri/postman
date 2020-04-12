@@ -5,7 +5,7 @@ notifications:
   email: false
 deploy:
   provider: script
-  script: if [[ $TRAVIS_COMMIT_MESSAGE == *"run1"* ]]; then bash deployment1.sh; fi
+  script: if [[ $TRAVIS_COMMIT_MESSAGE == *"[run1]"* ]]; then bash deployment1.sh; fi
   on:
     branch: master
    
